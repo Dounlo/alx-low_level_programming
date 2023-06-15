@@ -11,16 +11,20 @@ int main(void)
 {
 	char *b, *c;
 	char d;
-	
+
 	b = "and that piece of art is useful";
 	c = "Dora Korpar";
 	d = '\n';
-	while (*b) putchar(*b++);
+	while (*b)
+	{ putchar(*b++);
+	}
 	putchar('"');
 	putchar(' ');
 	putchar('-');
 	putchar(' ');
-	while (*c) putchar(*c++);
+	while (*c)
+{		putchar(*c++);
+}
 	putchar(',');
 	putchar(' ');
 	putchar('2');
