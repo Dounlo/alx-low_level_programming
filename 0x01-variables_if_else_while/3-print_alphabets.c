@@ -12,7 +12,7 @@ int main(void)
 	char nl;
 
 	l = "abcdefghijklmnopqrstuvwxyz";
-	L = "ABCDEFGHIJKLMNOPQRSTUVWXYZ$";
+	L = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	nl = '\n';
 	while (*l)
 	{
