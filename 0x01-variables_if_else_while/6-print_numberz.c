@@ -9,16 +9,14 @@
 int main(void)
 {
 	int a;
-	char nl;
 
 	a = 0;
-	nl = '\n';
 
 	for (a = 0; a < 10; a++)
 	{
 		putchar(a);
 	}
-	putchar(nl);
+	putchar('\n');
 	return (0);
 }
 
