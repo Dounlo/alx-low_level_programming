@@ -30,7 +30,6 @@ void times_table(void)
 		_putchar('0' + (o % 10));
 		_putchar(',');
 		_putchar(' ');
-		_putchar(' ');
 		}
 		else if (o > 9 && i == 9)
 		{
