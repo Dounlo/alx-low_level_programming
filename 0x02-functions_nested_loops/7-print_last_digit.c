@@ -1,3 +1,4 @@
+#include <limits.h>
 #include "main.h"
 /**
  * print_last_digit -Returns the value of the last digit
@@ -13,10 +14,15 @@ int print_last_digit(int n)
 		d = n % 10;
 		_putchar('0' + d);
 	}
-	else
+	else if (n < 0)
 	{
 		c = -n;
 		d = c % 10;
+		_putchar('0' + d);
+	}
+	else if (n == INT_MIN)
+	{
+		d = 88;
 		_putchar('0' + d);
 	}
 	return (d);
