@@ -13,6 +13,15 @@ int main(void)
     _putchar('\n');
     print_times_table(98);
     _putchar('\n');
-    print_times_table(12);  
+    print_times_table(12);
+    _putchar('\n');
+    print_times_table(2);
+    _putchar('\n');
+    print_times_table(13);
+    _putchar('\n');
+    print_times_table(0);
+    _putchar('\n');
+    print_times_table(10);
+    _putchar('\n');
     return (0);
 }
