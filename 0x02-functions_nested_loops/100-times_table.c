@@ -24,11 +24,13 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
+					_putchar(' ');
 					_putchar(o + '0');
 				}
 				else if (o >= 10 && o < 100)
 				{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 					_putchar((o / 10) + '0');
 					_putchar((o % 10) + '0');
