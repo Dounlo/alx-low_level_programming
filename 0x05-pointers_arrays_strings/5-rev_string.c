@@ -4,24 +4,21 @@
  */
 void rev_string(char *s)
 {
+	int i, j, len;
 	char *str;
-	int i, len, j;
 
-	str = "";
+	str = s;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		len = i;
 	}
-	for (i = len; i >= 0; i--)
+	i = len;
+	j = 0;
+	while (i != 0 && j != len)
 	{
-		for (j = 0; j <= len; j++)
-		{
-			if (i == j)
-				{
-					str[j] = s[i];
-				}
-			else
-			{}
-		}
+		str[j] = s[i];
+		j++;
+		i--;
 	}
+	s = str;
 }
