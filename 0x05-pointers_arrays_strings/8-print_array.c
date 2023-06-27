@@ -10,7 +10,7 @@ void print_array(int *a, int n)
 {
 	int i, m;
 
-	if (n != 1)
+	if (n != 0)
 	{
 	m = n - 1;
 	for (i = 0; i < m; i++)
@@ -20,7 +20,5 @@ void print_array(int *a, int n)
 	printf("%d\n", a[m]);
 	}
 	else
-	{
-		printf("%d\n", a[n]);
-	}
+	{}
 }
