@@ -5,7 +5,7 @@
  * @width: width of the grid
  * @height: height of the grid
  *
- * Return : an integer pointer of 2 dimensions
+ * Return: an integer pointer of 2 dimensions
  */
 int **alloc_grid(int width, int height)
 {
@@ -27,6 +27,7 @@ int **alloc_grid(int width, int height)
 		pointer[x] = malloc(sizeof(int) * width);
 		if (pointer[x] == NULL)
 		{
+			free(pointer)
 			return (NULL);
 		}
 	}
