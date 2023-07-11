@@ -15,9 +15,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (k = 0; str[k] != '\0'; k++)
+	n = 0;
+	while (str[n])
 	{
-		n = k + 1;
+		n++;
 	}
 	pointer = (char *)malloc(sizeof(char) * (n + 1));
 	if (pointer == NULL)
