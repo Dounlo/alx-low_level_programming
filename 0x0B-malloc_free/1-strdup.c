@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	int k, n;
+	unsigned int k, n;
 	char *pointer;
 
 	if (str == NULL)
@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	}
 	for (k = 0; str[k] != '\0'; k++)
 	{
-		n = k;
+		n = k + 1;
 	}
 	pointer = (char *)malloc(sizeof(char) * (n + 1));
 	if (pointer == NULL)
