@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	{
 		n = k + 1;
 	}
-	pointer = malloc(n + 1);
+	pointer = malloc(sizeof(char) * (n + 1));
 	if (pointer == NULL)
 	{
 		return (NULL);
