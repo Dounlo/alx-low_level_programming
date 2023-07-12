@@ -2,7 +2,11 @@
 #include "stdio.h"
 #include "stdlib.h"
 /**
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: arguments
  *
+ * Return : 0 success or 1 error
  */
 int main(int argc, char *argv[])
 {
