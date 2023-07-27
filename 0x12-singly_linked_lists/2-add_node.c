@@ -1,5 +1,7 @@
-#include "main.h"
+#include "lists.h"
 #include "stdio.h"
+#include <stdlib.h>
+#include <string.h>
 /**
  * *add_node - creates a node to the beginning of a list
  * @head: double pointer of the list
@@ -13,14 +15,14 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *current;
 
 	while (str)
-		lenght++;
-	current = malloc(sizeof(list_t));
+		length++;
+	current = (list_t *)malloc(sizeof(list_t));
 	if (current == NULL)
 		return (NULL);
 	current->str = strdup(str);
 	current->len = length;
-	current->next = *head;
-	*head = current;
+	current->next = (*head);
+	(*head) = current;
 
 	return (*head);
 }
