@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 		rd = read(from_fd, buffer, 1024);
-		to_fd = open(argv[2], O_WRONLY, O_APPEND);
+		to_fd = open(argv[2], O_WRONLY | O_APPEND);
 	} while (rd > 0);
 	free(buffer);
 	close_fi(from_fd);
