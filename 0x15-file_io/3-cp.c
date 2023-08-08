@@ -64,12 +64,14 @@ int main(int argc, char *argv[])
 {
 	int from_fd, to_fd, rd, wrt;
 	char *buffer;
+	mode_t file_permis;
 
 	check1(argc);
 	buffer = create_buf(argv[2]);
+	file_permis = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	from_fd = open(argv[1], O_RDONLY);
 	rd = read(from_fd, buffer, 1024);
-	to_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	to_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, file_permis);
 	do {
 		if (from_fd == -1 || rd == -1)
 		{
